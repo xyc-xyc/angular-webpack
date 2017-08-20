@@ -9,6 +9,8 @@ import { AboutComponent } from './about/about.component';
 import { ApiService } from './shared';
 import { routing } from './app.routing';
 
+import {ButtonModule,SelectButtonModule} from 'primeng/primeng';
+
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 
 @NgModule({
@@ -16,7 +18,8 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     BrowserModule,
     HttpModule,
     FormsModule,
-    routing
+    routing,
+    ButtonModule,SelectButtonModule
   ],
   declarations: [
     AppComponent,

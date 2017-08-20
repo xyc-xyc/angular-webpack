@@ -1,3 +1,7 @@
+import 'primeng/resources/themes/omega/theme.css';
+import 'primeng/resources/primeng.min.css';
+import 'font-awesome/css/font-awesome.min.css';
+
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
