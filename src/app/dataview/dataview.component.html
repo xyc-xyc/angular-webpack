@@ -1,0 +1,3 @@
+<p-dataTable [value]="studydata" scrollable="true" [scrollHeight]="tableHeight" *ngIf="studydata!=null">
+  <p-column *ngFor="let field of fields" [field]="field.id" [header]="field.header"></p-column>
+</p-dataTable>

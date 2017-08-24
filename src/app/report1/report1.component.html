@@ -1,0 +1,13 @@
+<div class="buttons">
+  <span>  Data Type:
+        <p-selectButton [options]="types" [(ngModel)]="type" (onChange)="load()"></p-selectButton>
+        </span>
+
+  <span> Gender Filter:
+          <p-selectButton [options]="genders" [(ngModel)]="gender" (onChange)="load()"></p-selectButton>
+        </span>
+
+  <span>
+          <button md-raised-button (click)="load()">Load</button>
+        </span>
+</div>

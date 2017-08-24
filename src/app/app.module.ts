@@ -9,9 +9,17 @@ import { AboutComponent } from './about/about.component';
 import { ApiService } from './shared';
 import { routing } from './app.routing';
 
-import {ButtonModule,SelectButtonModule} from 'primeng/primeng';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+import {ButtonModule,SelectButtonModule,DataTableModule,ListboxModule,TabViewModule,DropdownModule} from 'primeng/primeng';
+import {MdButtonModule, MdCheckboxModule} from '@angular/material';
 
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
+
+import {Report1} from './report1/report1.component';
+import {Report2} from './report2/report2.component';
+import {DataView} from './dataview/dataview.component';
+
 
 @NgModule({
   imports: [
@@ -19,12 +27,17 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     HttpModule,
     FormsModule,
     routing,
-    ButtonModule,SelectButtonModule
+    BrowserAnimationsModule,
+    ButtonModule,SelectButtonModule,DataTableModule,ListboxModule,TabViewModule,
+    MdButtonModule, MdCheckboxModule,DropdownModule,
+
   ],
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    Report1,Report2,DataView,
+    
   ],
   providers: [
     ApiService

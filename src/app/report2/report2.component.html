@@ -1,0 +1,4 @@
+<div class="content" >
+    <p-dropdown [options]="genders" [(ngModel)]="gender" (onChange)="load()" [style]="{'width':'150px'}"></p-dropdown>
+    <button md-mini-fab (click)="load()">Load</button>
+</div>

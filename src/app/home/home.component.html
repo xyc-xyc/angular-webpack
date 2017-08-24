@@ -1,3 +1,16 @@
-<p>
-  <p-selectButton [options]="cities" [(ngModel)]="selectedCity"></p-selectButton>
-</p>
+<div>
+<p-tabView (onChange)="tabChanged()">
+    <p-tabPanel header="Report 1" [selected]="true">
+      <report-1 (onLoad)="load($event)"></report-1>
+    </p-tabPanel>
+    <p-tabPanel header="Report 2">
+      <report-2 (onLoad)="load($event)"></report-2>
+    </p-tabPanel>
+    <p-tabPanel header="Report 3">
+    </p-tabPanel>
+</p-tabView>
+</div>
+<div>
+  <data-view #dv1></data-view>
+</div>
+
