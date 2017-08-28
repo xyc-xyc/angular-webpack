@@ -8,11 +8,9 @@ import 'rxjs/add/operator/map';
 export class ApiService {
   title:any ="data";
 
-  base:string = "http://localhost:5000";
+  base:string = process.env.DATA_URL_BASE;
 
   constructor(private http: Http) { 
-    //prod
-    //this.base:string = "";
   }
   
   getData(gender:string, type:string ) : Observable<any> {
